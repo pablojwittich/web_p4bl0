@@ -1,20 +1,12 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WebController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-});
-
-require __DIR__.'/auth.php';
+//GET
+Route::get('/', [WebController::class, 'index'])->name('index');
+Route::get('/app', [WebController::class, 'app'])->name('app');
+// Route::get('/proyectos', [WebController::class, 'proyectos'])->name('proyectos');
+Route::get('/contacto', [WebController::class, 'contacto'])->name('contacto');
+Route::get('/experiencia', [WebController::class, 'experiencia'])->name('experiencia');
+Route::get('/sobremi', [WebController::class, 'sobremi'])->name('sobremi');
