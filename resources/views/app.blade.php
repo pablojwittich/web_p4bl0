@@ -3,16 +3,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dev Pablo Wittich</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
         <style>
+            /* CONFIG GOBLAL*/
             *{
                 padding:0;
                 margin:0;
                 border: 0;
                 width: 80%;
-                heigth: 100%;
+                height: auto;
                 background-color: #02050d;
+                font-family: "Fira Code", monospace;
+                color: white;
             }
+            .fira-code-<uniquifier> {
+                font-family: "Fira Code", monospace;
+                font-optical-sizing: auto;
+                font-weight: <weight>;
+                font-style: normal;
+            }
+
+            /* NAV */
             nav{
                 list-style-type: none;
                 margin: 0;
@@ -21,7 +34,7 @@
                 width: 12em;
                 height: 22em;
             }
-            a{
+            .a-nav{
                 display: block;
                 margin-bottom: 3em;
                 padding: 5em;
@@ -33,67 +46,110 @@
                 color: white;
                 border: solid 2px #2250d9;
             }
-            a:hover{
+            .a-nav:hover{
                 background-color:#2250d9;
                 color:#02050d;
                 border: solid 2px white;
             }
-            h1{
-                color: white;
-                float: right;
-                line-height: 100px;
+            nav > h4{
+                font-size: 1.1em;
             }
-            .img-logo{
-               width: 6em;
-               height: 6em;
-               float: left;
+            nav > h4:hover{
+                font-size: 1.4em;
+            }
+
+            /* CONFIG DESCRIPTION */
+            header >.logo-img{
+                width: 8em;
+                height: 8em;
+                float:left;
+                margin-top: 2em;
+            }
+            h1{
+                float: right;
+                line-height: 5em;
+                padding-left: 1em;
+                margin-bottom: 1em;
             }
             header{
-                display: inline-block;
-                margin-left: 30em;
-                margin-top: 5em;
+                display: flex;
+                justify-content: center
+                align-text: center;
             }
             .description{
-                margin-left: 40em;
+                display: inline-block;
+                align-items: center;
+                margin-left: 10em;
+                margin-top: -3em;
             }
-            .description > h3{
-               color: white;
-               font-size: 1.1em;
-            }
-            .description > h3:hover{
-                font-size:1.5em;
-            }
-            .description > img{
+            .description > a > img{
                 width: 2em;
                 height: auto;
-                margin: top: 1em;
                 padding: 0.3em 0.3em 0.3em 0.3em;
+            }
+            .description > a > img:hover{
+                width: 3em;
+                height: auto;
+            }
+            .description > a{
+                color:#02050d;
+            }
+            .description >  h4 {
+                margin-bottom: 1em;
+            }
+            .description-prima{
+                margin: 0 auto;
+                justify-content: center;
             }
         </style>
     </head>
     <body>
-        <header>
-            <img class="img-logo" src="https://lh3.googleusercontent.com/a/ACg8ocJEfyJ0gbMyNHPaLqT4jJjeX_c-a5rDJUtC5G7z0CLGg46S4iDucA=s576-c-no" >
-            <h1>Pablo Javier Wittich</h1>
-        </header>
-        <section class="description">
-            <h3>Desarrollador Backend</h3>
-            <img class="php-ico" alt="icono php" src="https://img.icons8.com/?size=100&id=39856&format=png&color=ffffff">
-            <img class="laravel-ico" alt="icono laravel" src="https://img.icons8.com/?size=100&id=114956&format=png&color=ffffff">
-            <img class="csharp-ico" alt="icono csharp" src="https://img.icons8.com/?size=100&id=55205&format=png&color=ffffff">
-            <img class="java-ico" alt="icono java" src="https://img.icons8.com/?size=100&id=2572&format=png&color=ffffff">
-            <img class ="sql-ico" alt="icono sql" src="https://img.icons8.com/?size=100&id=oaMmpx1c7yDA&format=png&color=ffffff">
-            <img class="mysql-ico" alt="icono mysql" src="https://img.icons8.com/?size=100&id=39855&format=png&color=ffffff">
-            <img class="git-ico" alt="icono git" src="https://img.icons8.com/?size=100&id=38389&format=png&color=ffffff">
-            <img class="linux-ico" alt="icono linux" src="https://img.icons8.com/?size=100&id=38796&format=png&color=ffffff">
-            <img>
+        <section class="description-prima">
+            <header>
+                <img class="logo-img" src="https://lh3.googleusercontent.com/a/ACg8ocJEfyJ0gbMyNHPaLqT4jJjeX_c-a5rDJUtC5G7z0CLGg46S4iDucA=s576-c-no" >
+                <h1>Pablo Javier Wittich</h1>
+            </header>
+                <section class="description">
+                    <h3>Backend Developer</h3>
+                    <h4>Tecnologias:</h4>
+                    <a href="https://www.php.net/manual/es/index.php" target="_blank">
+                        <img class="php-ico" alt="icono php" src="https://img.icons8.com/?size=100&id=39856&format=png&color=ffffff">
+                    </a>
 
-        </section>
+                    <a href="https://laravel.com/docs/11.x" target="_blank">
+                        <img class="laravel-ico" alt="icono laravel" src="https://img.icons8.com/?size=100&id=114956&format=png&color=ffffff">
+                    </a>
+
+                    <a href="https://learn.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+                        <img class="csharp-ico" alt="icono csharp" src="https://img.icons8.com/?size=100&id=55205&format=png&color=ffffff">
+                    </a>
+
+                    <a href="https://docs.oracle.com/en/java/" target="_blank">
+                        <img class="java-ico" alt="icono java" src="https://img.icons8.com/?size=100&id=2572&format=png&color=ffffff">
+                    </a>
+
+                    <a href="https://es.wikipedia.org/wiki/SQL" target="_blank">
+                        <img class ="sql-ico" alt="icono sql" src="https://img.icons8.com/?size=100&id=oaMmpx1c7yDA&format=png&color=ffffff">
+                    </a>
+
+                    <a href="https://dev.mysql.com/doc/" target="_blank">
+                        <img class="mysql-ico" alt="icono mysql" src="https://img.icons8.com/?size=100&id=39855&format=png&color=ffffff">
+                    </a>
+
+                    <a href="https://git-scm.com/book/es/v2" target="_blank">
+                        <img class="git-ico" alt="icono git" src="https://img.icons8.com/?size=100&id=38389&format=png&color=ffffff">
+                    </a>
+
+                    <a href="https://www.kernel.org/doc/html/latest/translations/sp_SP/index.html" target="_blank">
+                        <img class="linux-ico" alt="icono linux" src="https://img.icons8.com/?size=100&id=38796&format=png&color=ffffff">
+                    </a>
+            </section>
+        </<section>
         <nav>
-            <h4><a href="{{route('index')}}">Proyectos</a></h4>
-            <h4><a href="{{route('contacto')}}">Contancto</a></h4>
-            <h4><a href="{{route('experiencia')}}">Experiencia</a></h4>
-            <h4><a href="{{route('sobremi')}}">Sobre mi</a></h4>
+            <h4><a class="a-nav" href="{{route('index')}}">Proyectos</a></h4>
+            <h4><a class="a-nav" href="{{route('contacto')}}">Contancto</a></h4>
+            <h4><a class="a-nav" href="{{route('experiencia')}}">Experiencia</a></h4>
+            <h4><a class="a-nav" href="{{route('sobremi')}}">Sobre mi</a></h4>
         </nav>
 
     </body>

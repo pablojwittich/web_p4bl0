@@ -17,15 +17,26 @@ class WebController extends Controller
         return view('app');
     }
 
-
+    /*
     public function proyectos()
     {
         return view('proyectos');
     }
+     */
 
 
     public function contacto()
     {
         return view('contacto');
+    }
+
+    public function experiencia()
+    {
+        return view('experiencia');
+    }
+
+    public function sobremi()
+    {
+        return view('sobremi');
     }
 }
