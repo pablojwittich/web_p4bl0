@@ -14,7 +14,7 @@
                 border: 0;
                 width: 80%;
                 height: auto;
-                background-color: #02050d;
+                background-color: #02050d99;
                 font-family: "Fira Code", monospace;
                 color: white;
             }
@@ -41,14 +41,14 @@
                 padding: 8px 16px;
                 border-radius: 10px;
                 text-decoration: none;
-                background-color:#02050d;
+                background-color:#02050d9;
                 text-align: center;
                 color: white;
                 border: solid 2px #2250d9;
             }
             .a-nav:hover{
                 background-color:#2250d9;
-                color:#02050d;
+                color:#02050d9;
                 border: solid 2px white;
             }
             nav > h4{
@@ -92,7 +92,7 @@
                 height: auto;
             }
             .description > a{
-                color:#02050d;
+                color:#02050d99;
             }
             .description >  h4 {
                 margin-bottom: 1em;
@@ -144,7 +144,7 @@
                         <img class="linux-ico" alt="icono linux" src="https://img.icons8.com/?size=100&id=38796&format=png&color=ffffff">
                     </a>
             </section>
-        </<section>
+        </section>
         <nav>
             <h4><a class="a-nav" href="{{route('index')}}">Proyectos</a></h4>
             <h4><a class="a-nav" href="{{route('contacto')}}">Contancto</a></h4>
