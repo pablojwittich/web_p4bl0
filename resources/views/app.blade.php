@@ -14,8 +14,16 @@
                 border: 0;
                 width: 80%;
                 height: auto;
-                background-color: #02050d99;
+                scroll-behavior: auto;
+                scroll-behavior: smooth;
+                scroll-behavior: inherit;
+                scroll-behavior: initial;
+                scroll-behavior: unset;
+
                 font-family: "Fira Code", monospace;
+            }
+            body{
+                background-color: #0b0a13;
                 color: white;
             }
             .fira-code-<uniquifier> {
@@ -41,21 +49,21 @@
                 padding: 8px 16px;
                 border-radius: 10px;
                 text-decoration: none;
-                background-color:#02050d9;
+                background-color:#0b0a13;
                 text-align: center;
                 color: white;
                 border: solid 2px #2250d9;
             }
             .a-nav:hover{
                 background-color:#2250d9;
-                color:#02050d9;
+                color:#0b0a13;
                 border: solid 2px white;
             }
             nav > h4{
-                font-size: 1.1em;
+                font-size: 1em;
             }
             nav > h4:hover{
-                font-size: 1.4em;
+                font-size: 1.15em;
             }
 
             /* CONFIG DESCRIPTION */
@@ -73,7 +81,7 @@
             }
             header{
                 display: flex;
-                justify-content: center
+                justify-content: center;
                 align-text: center;
             }
             .description{
@@ -92,14 +100,27 @@
                 height: auto;
             }
             .description > a{
-                color:#02050d99;
+                color:#0b0a13;
             }
             .description >  h4 {
                 margin-bottom: 1em;
             }
             .description-prima{
-                margin: 0 auto;
-                justify-content: center;
+                margin-left: 25em;
+            }
+
+            /* CONFIG MAIN */
+            .main-prima{
+                background-color: #1b1929;
+                border-radius: 10px;
+                border: solid 2px #2250d9;
+                width: 50em;
+                height: 40em;
+                display: inline-block;
+                float: right;
+                margin-top: 1em;
+                margin-right: -15em;
+
             }
         </style>
     </head>
@@ -143,7 +164,11 @@
                     <a href="https://www.kernel.org/doc/html/latest/translations/sp_SP/index.html" target="_blank">
                         <img class="linux-ico" alt="icono linux" src="https://img.icons8.com/?size=100&id=38796&format=png&color=ffffff">
                     </a>
-            </section>
+                </section>
+        </section>
+        <section class="main-prima">
+            <main>
+            </main>
         </section>
         <nav>
             <h4><a class="a-nav" href="{{route('index')}}">Proyectos</a></h4>
@@ -151,6 +176,5 @@
             <h4><a class="a-nav" href="{{route('experiencia')}}">Experiencia</a></h4>
             <h4><a class="a-nav" href="{{route('sobremi')}}">Sobre mi</a></h4>
         </nav>
-
     </body>
 </html>
